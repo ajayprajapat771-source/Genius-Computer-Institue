@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+
+
+}
+
+.Bank{
+    background: gold;
+    padding: 12px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    text-align: right;
+    font-size: 20px;
+   
+}
+
+.Bank p{
+    position: relative;
+    gap: 0px;
+    top: -10px;
+    font-size: 20px;
+    color: blue;
+}
+
+
+.Sec{
+    background: blue;
+    padding: 2px;
+   
+    max-width: 100%;
+
+}
+
+.Sec ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.Sec li a{
+    text-decoration: none;
+      color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     transition: all  0.3s ease;
+   
+}
+
+.Sec li a:hover{
+   text-decoration: underline;
+    color: black;
+    border-left: 10px solid black;
+    border-radius: 50px;
+}
+
+.Sec li:nth-child(4){
+    filter: drop-shadow(2px 2px 5px red);
+    text-decoration: underline;
+    color: white;
+    border: none;
+
+
+}
+
+
+
+
+@media (max-width:768px) {
+     .Sec li a:hover{
+        text-shadow:  0 0 10px red;
+        border: none;
+        filter: drop-shadow(2px 2px 5px black);
+        color: white;
+        
+    }
+
+.Sec ul{
+font-size: 15px;
+gap: 30px;
+
+}
+
+.MM{
+    width: 100%;
+}
+
+
+
+}
+
+.Loc{
+    background: black;
+    color: white;
+    text-align: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 12px 13px;
+}
+
+.Loc p{
+    color: red;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    animation: Tow 2s infinite alternate;
+    
+}
+
+@keyframes Tow {
+    From{
+        color: red;
+    }
+    to{
+        color: white;
+    }
+    
+}
+
+.Loc h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Loc span{
+    border: 1px solid white;
+    padding: 5px;
+    transition: all 0.3s ease;
+    
+
+}
+
+.Loc span:hover{
+    border-left: 6px solid red;
+    border-radius: 20px;
+    
+}
+
+
+
+
+</style>
+<body>
+
+    <div class="Bank">
+        <h1>Genius Computer Institute</h1>
+        <p>Learning Never Stop</p>
+    </div>
+    
+    <div class="Sec">
+        <ul>
+         <li><a href="Genius.comter.html"> Home</li></a> 
+              <li><a href="#"> Insert</li></a> 
+                <li><a href="#">Updates</li></a> 
+                  <li><a href="Location.html">Contact</li></a> 
+                  
+        </ul>
+    </div>       
+
+
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1777891151790!6m8!1m7!1soC7WvKY3AC3iLdqlQalpLQ!2m2!1d23.17697660943464!2d75.78782530946118!3f50.73984262681171!4f10.631802387587683!5f1.747787479835849" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="MM"></iframe>
+    <div class="Loc">
+        <h3>Name: <span>Ajay Prajapat Sir</span></h3>
+        <h3>Call: <span>91: 6261370529</span></h3>
+        <p>Location On Map Name:- Sunshine_Tower_TeenBatti_Chouraha_Freeganj_Ujjain</p>
+    </div>
+
+    <script>
+        window.addEventListener("offline",function(){
+            
+         checkStatus();
+
+            alert("Your a offline")
+            setTimeout(function(){
+             
+            window.location.href="inconecting.html"
+            },600)
+
+            })
+    </script>
+    
+</body>
+</html>
