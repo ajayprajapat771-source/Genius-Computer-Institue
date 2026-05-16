@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Computer Institute From</title>
+    <link rel="icon" href="Icon/Genus.png">
+</head>
+<style>
+
+     *{
+        box-sizing: border-box;
+       
+    }
+
+    body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+
+}
+
+.Bank{
+    background: gold;
+    padding: 12px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    text-align: right;
+    font-size: 20px;
+   
+}
+
+.Bank p{
+    position: relative;
+    gap: 0px;
+    top: -10px;
+    font-size: 20px;
+    color: blue;
+}
+
+
+.Sec{
+    background: blue;
+    padding: 2px;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.Sec ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.Sec li a{
+    text-decoration: none;
+      color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     transition: all  0.3s ease;
+   
+}
+
+.Sec li a:hover{
+   text-decoration: underline;
+    color: black;
+    border-left: 10px solid black;
+    border-radius: 50px;
+}
+
+.Sec li:nth-child(2){
+    filter: drop-shadow(2px 2px 5px red);
+    text-decoration: underline;
+    color: white;
+    border: none;
+
+
+}
+
+   .input{
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        
+        position: relative;
+
+        background: white;
+        padding: 12px 13px;
+        border: 2px solid black;
+      
+        border-radius: 20px;
+
+    }
+
+    .labal{
+    background:red;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    border-style: groove;
+    animation: Ansh 2s infinite alternate;
+    
+    
+    }
+
+    .input input{
+        text-decoration: none;
+       padding: 12px ;
+       background: black;
+       color: white;
+       font-weight: bold;
+       text-shadow:  0 0 10px red;
+       filter: drop-shadow(2px 2px 5px red);
+       border: 2px solid black;
+        transition: all 0.3s ease;
+        font-size: 15px;
+    }
+
+    .input input:hover{
+        filter: drop-shadow(2px 2px 5px blue);
+        border-radius: 50px;   
+    }
+
+    .input input:focus{
+        filter: drop-shadow(2px 2px 5px green);
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+
+    .input label{
+        font-family: 'AvantGarde Md BT';
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .input button{
+        border: none;
+        background: none;
+    }
+
+
+
+
+    .input button{
+        padding: 12px 13px;
+        color: white;
+        background: red;
+       font-size: 16px;
+       border-radius: 5px;
+       font-weight: bold;
+       transform: scale(1.1);
+       filter: drop-shadow(2px 2px 5px red);
+       transition: all 0.1s ease;
+    }
+    
+    
+    .input button:active{
+        transform: scale(1.0);
+        background: green;
+        filter: drop-shadow(2px 2px 5px green);
+
+        
+    }
+
+    .input button:hover{
+        border-left: 4px solid black;
+         border-right: 3px solid black;
+          border-bottom: 2px solid black;
+           border-top: 1px solid black;
+        
+    }
+
+    select{
+        color: white;
+        background: none;
+        border: none;
+         transition: all 0.3s ease;
+    }
+
+    select{
+        padding: 12px 13px;
+        background: black;
+        
+        filter: drop-shadow(2px 2px 5px red);
+       
+
+    }
+    
+    select:focus{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px black;
+        border-radius: 20px;
+        font-size: 15px;
+        
+        
+
+    }
+
+    @media (max-width:768px) {
+        .Sec ul{
+            font-size: 15px;
+            gap: 30px   ;
+        }
+        
+    }
+
+</style>
+<body>
+
+
+    
+    <div class="Bank">
+    <h1>Genius Computer Institute</h1>
+        <p>Learning Never Stop</p>
+    </div>
+    
+    <div class="Sec">
+        <ul>
+            <li><a href="Genius.comter.html"> Home</li></a> 
+              <li><a href="#"> Form</li></a> 
+                <li><a href="#">Updates</li></a> 
+                  <li><a href="Location.html">Contact</li></a> 
+                  
+        </ul>
+    </div>       
+
+        <form id="myfrom">
+    <div class="input">
+        <div class="labal" id="This"> </div>
+        <label for="name" >Type Your Name</label><br><br>
+        <input type="text" id="Name" placeholder="Type Here...." required><br><br>
+         <label for="name" >Type Your Phone Number</label><br><br>
+        <input type="number" id="Phone" placeholder="Type Here...." required><br><br>
+        <label for="password">Slected a Course</label><br><br>
+        <select name="s" id="CCR" >
+            <option >DCA</option>
+            <option >PGDCA</option>
+            <option >CCA</option>
+            <option >ACCA</option>
+            <option >CPCT</option>
+            <option >Programing</option>
+            <option >Webdesing</option>
+            <option >Graphics Desing</option>
+            <option >Besic</option>
+            <option >Ai</option>
+
+
+        </select> <br><br>
+        <button type="submit" onclick="Send()" >submit</button>
+
+       
+    </div>
+    </form>
+
+        <script>
+            function Send(){
+
+            let Name = document.getElementById("Name").value;
+              let Phone = document.getElementById("Phone").value;
+              let NNm   = /^[a-z ]+$/i;
+              let CCR = document.getElementById("CCR").value;
+                let Phonepe =  /^[6-9]\d{9}$/;
+            
+
+                if(!Name  && !Phone){
+                    alert("Pleae Fill All details")
+                    return false;
+                }
+
+                  if(!Name){
+                    alert("Pleaes Enter  a Your Name")
+                    return false;
+                }
+
+                if(!Phonepe.test(Phone)){
+                    alert("Pleae Type a vaild number")
+                    return false;
+                }
+                 if(!NNm.test(Name)){
+                alert("Pleae Enter A currect Name");
+                return false;
+                }
+          
+
+                if(!confirm("Are You Sure To Submit Form?")){
+                return;
+}
+           
+    let whatsappNumber = 916261370529;
+    let message = `New Admission:%0A
+    Name: ${Name}%0A
+    Course: ${CCR}%0A
+    Phone: ${Phone}%0A`;
+           
+
+    let url = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+window.open(url, "_blank");
+
+              
+            }
+
+
+        </script>
+  
+</body>
+</html>
