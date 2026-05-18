@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Computer Institute Learning Updates</title>
+</head>
+
+<style>
+  *{
+        box-sizing: border-box;
+       
+       
+    }
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+    .Bank{
+    background: gold;
+    padding: 12px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    text-align: right;
+    font-size: 20px;
+   
+}
+
+.Bank p{
+    position: relative;
+    gap: 0px;
+    top: -10px;
+    font-size: 20px;
+    color: blue;
+}
+
+
+.Sec{
+    background: blue;
+    padding: 2px;
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.Sec ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.Sec li a{
+    text-decoration: none;
+      color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+     transition: all  0.3s ease;
+   
+}
+
+.Sec li a:hover{
+   text-decoration: underline;
+    color: black;
+    border-left: 10px solid black;
+    border-radius: 50px;
+}
+
+.Sec li:nth-child(3){
+    filter: drop-shadow(2px 2px 5px red);
+    text-decoration: underline;
+    color: white;
+    border: none;
+
+
+
+
+}
+
+@media (max-width:768px) {
+
+
+    .Sec li a:hover{
+        text-shadow:  0 0 10px red;
+        border: none;
+        filter: drop-shadow(2px 2px 5px black);
+        color: white;
+        
+        
+    }
+.Sec ul{
+font-size: 15px;
+gap: 30px;
+
+}
+
+.update img{
+    width: 70%;
+    position: relative;
+    left: 50px;
+
+}
+
+
+
+}
+
+
+.maruqee{
+    background: rgb(33, 33, 184);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 13px;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.maruqee::before,
+.maruqee::after{
+    content: "";
+    position:absolute;
+    width: 60px;
+    top: 0;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+   
+
+}
+
+.maruqee::before{
+    left: 0;
+    background: linear-gradient(to right, rgb(255, 0, 0), transparent);
+}
+
+.maruqee::after{
+    right: 0;
+    color: red;
+    background: linear-gradient(to left, rgb(33,33,184), transparent);
+}
+
+.update-img{
+    width: 33%;
+    margin-left: 30%;
+    margin: 30px;
+    position: relative;
+    left: 30%;
+    border-radius: 50px;
+     transition: all 0.3s ease;
+    
+   }
+
+   .update{
+    color: white;
+   }
+
+   .update p{
+    border: 1px solid white;
+    background: linear-gradient(to left,blue,red);
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+   }
+
+   .update-img:hover{
+    transform: scale(1.2);
+   
+   }
+   
+</style>
+<body>
+
+    
+    <div class="Bank">
+    <h1>Genius Computer Institute</h1>
+        <p>Learning Never Stop</p>
+    </div>
+    
+    <div class="Sec">
+        <ul>
+            <li><a href="Genius.comter.html"> Home</li></a> 
+              <li><a href="From.html"> Form</li></a> 
+                <li><a href="Updates.html">Updates</li></a> 
+                  <li><a href="Location.html">Contact</li></a> 
+                  
+        </ul>
+    </div>   
+    <div class="maruqee">
+
+      <marquee behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+        Welcome To More Update's 
+        |🔴 Live More Update's 
+        |🟢 And More Details  
+        |Genius Computer Institute Open Admission 🖥
+      </marquee>
+
+
+    </div>
+
+    <div class="update">
+        <img src="Updates/img1.jfif" class="update-img" alt="">
+        <p>|Today Status</p>
+
+
+         <img src="Updates/img2.png" class="update-img" alt="">
+        <p>|Today Status</p>
+
+
+         <img src="Updates/img3.png" class="update-img" alt="">
+        <p>|Today Status</p>
+
+
+         <img src="Updates/img7.jfif" class="update-img" alt="Status Not Found">
+        <p>|Today Status</p>
+
+
+         <img src="Updates/img8.jfif" class="update-img" alt="Statis Not Found">
+        <p>|Today Status</p>
+
+    </div>
+    
+    
+    
+</body>
+</html>
